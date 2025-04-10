@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+@font-face{
+    font-family: "coolvetica";
+    src: url(/Coolvetica\ Rg.otf);
+}
+@font-face{
+    font-family: "lemon";
+    src: url(/LEMONMILK-Regular.otf);
+}
+@font-face{
+    font-family: "loud";
+    src: url(/ADELIA.otf);
+}
+@font-face{
+    font-family: "akira";
+    src: url(/Klik-Light.otf);
+}
+@font-face{
+    font-family: "pk";
+    src: url(/TK3iWkUHHAIjg752GT8Gl-1PKw.ttf);
+}
+
