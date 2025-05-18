@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Praise&display=swap" rel="stylesheet">
+
+  <link href="/src/style.css" rel="stylesheet">
+  <link rel="icon" href="/S.png" type="image/png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Saksham Shrestha</title>
+</head>
+
+<body class="text-[#E5E5E5] bg-[#222222] font-[PPN]">
+
+  <!-- C U R S O R -->
+  <div id="cursor" class="h-6 w-6 pointer-events-none  rounded-full fixed bg-black/20 backdrop-blur-sm ">
+
+  </div>
+
+  <!-- N A V   B A R -->
+  <nav class="flex w-screen items-start px-10 py-3 justify-between z-50 ">
+    <div class="flex w-1/3 ">
+      <a class="font-[Cool] text-5xl cursor-default flex items-center z-50 " href="#">S.</a>
+    </div>
+
+
+    <div class="hidden md:flex w-1/3 justify-center items-end cursor-pointer">
+      <p>sakshamorig123@gmail.com</p>
+    </div>
+
+
+    <div class="hidden md:flex flex-col w-1/3 items-end ">
+      <a class="text-sm" href="#skills">Skills</a>
+      <a class="text-sm" href="#projects">Projects</a>
+      <a class="text-sm" href="#contact">Contact</a>
+    </div>
+
+
+    <div class="flex w1/3 md:hidden toggle-btn z-50">
+      <button class="burger z-10" onclick="this.classList.toggle('active')"></button>
+    </div>
+  </nav>
+
+  <div class="overlay text-[#E5E5E5] font-[PPN] z-30">
+    <div class="overlay-menu">
+      <div class="menu-item">
+        <p>Navigate to</p>
+      </div>
+      <div class="menu-item">
+        <p id="active"><a href="#home">/home</a></p>
+      </div>
+      <div class="menu-item">
+        <p><a href="#skills">/skills</a></p>
+      </div>
+      <div class="menu-item">
+        <p><a href="#projects">/projects</a></p>
+      </div>
+      <div class="menu-item">
+        <p><a href="#contact">/contact</a></p>
+      </div>
+      
+    </div>
+
+
+  </div>
+
+
+  <!-- H E R O   P A G E -->
+  <section id="home" class="mb-10">
+    <div class="font-[PPNB] flex flex-col items-center justify-center pt-20 pb-10 lg:py-5 cursor-default">
+      <div class="flex justify-center gap-2 md:gap-6">
+        <div class="flex items-center">
+          <h1 class="text-lg sm:text-3xl md:text-4xl lg:text-5xl font-[Praise]">Front-End</h1>
+        </div>
+        <div>
+          <h1 class="text-4xl sm:text-6xl  md:text-8xl lg:text-9xl">DEVELOPER</h1>
+        </div>
+      </div>
+
+      <div class="flex justify-center gap-2 md:gap-6">
+        <div class="flex items-center">
+          <h1 class="text-4xl sm:text-6xl md:text-8xl lg:text-9xl">SAKSHAM</h1>
+        </div>
+        <div class="flex items-center">
+          <h1 class="text-lg sm:text-3xl md:text-4xl lg:text-5xl font-[Praise]">Shrestha</h1>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex px-5  flex-col md:flex-row w-screen gap-8 justify-center items-center">
+      <div class="flex justify-center">
+        <img class="w-[90%] h-auto sm:w-auto sm:h-80" src="/IMG_0184.jpg" alt="Photo.png">
+      </div>
+
+      <div class="flex flex-col gap-8 sm:w-[40%] md:w-[30%] lg:w-[20%] text-center md:text-left">
+        <p class="">Hey, I'm Saksham - a frontend developer who loves crafting smooth, responsive, and visually awesome
+          web
+          experiences.
+        </p>
+
+        <div>
+          <a class="border px-4 py-2 rounded-3xl hover:border-0 hover:bg-[#E5E5E5] hover:text-[#222] duration-300 ease-in-out" href="#contact">Get in Touch</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- S K I L L S    P A G E -->
+  <section id="skills" class="flex flex-col items-center py-10 cursor-default">
+    <div class="py-5 px-10 w-full flex flex-col">
+      <h1 class="text-4xl font-[PPNB]">SKILLS</h1>
+      <p class="tracking-wider">Skills that shape my work</p>
+    </div>
+    <div class="flex flex-col sm:flex-row flex-wrap items-center w-full justify-center  px-10">
+      <div class="w-full  sm:w-1/3 md:w-1/4 lg:w-1/5 flex flex-col items-start h-auto sm:h-60 py-8 sm:py-10">
+        <i class="ri-stackshare-line text-6xl"></i>
+        <h1 class="text-lg pt-4 pb-1">- Motion Graphics</h1>
+        <h1 class="text-left text-sm opacity-50 w-[80%]">With art of motion graphics, I animate ideas into visual
+          stories that capture
+          attention.</h1>
+      </div>
+
+      <div class="w-full  sm:w-1/3 md:w-1/4 lg:w-1/5 flex flex-col items-start h-auto sm:h-60 py-8 sm:py-10">
+        <i class="ri-tailwind-css-fill text-6xl "></i>
+        <h1 class="text-lg pt-4 pb-1">- Tailwind CSS</h1>
+        <h1 class="text-left text-sm opacity-50 w-[80%]">Knowledge of Tailwind CSS helps me design faster with clean
+          code.</h1>
+      </div>
+
+      <div class="w-full  sm:w-1/3 md:w-1/4 lg:w-1/5 flex flex-col items-start h-auto sm:h-60 py-8 sm:py-10">
+        <i class="ri-html5-fill text-6xl"></i>
+        <h1 class="text-lg pt-4 pb-1">- HTML</h1>
+        <h1 class="text-left text-sm opacity-50 w-[80%]">With my HTML skills, I build clean and semantic strucutre of
+          web pages.</h1>
+      </div>
+
+      <div class="w-full  sm:w-1/3 md:w-1/4 lg:w-1/5 flex flex-col items-start h-auto sm:h-60 py-8 sm:py-10">
+        <i class="ri-css3-fill text-6xl"></i>
+        <h1 class="text-lg pt-4 pb-1">- CSS</h1>
+        <h1 class="text-left text-sm opacity-50 w-[80%]">I bring designs to life with responsive styles, animations, and
+          layout precision
+          with the help of CSS.</h1>
+      </div>
+
+      <div class="w-full  sm:w-1/3 md:w-1/4 lg:w-1/5 flex flex-col items-start h-auto sm:h-60 py-8 sm:py-10">
+        <i class="ri-reactjs-fill text-6xl"></i>
+        <h1 class="text-lg pt-4 pb-1">- ReactJS</h1>
+        <h1 class="text-left text-sm opacity-50 w-[80%]">With ReactJs, I develop modern web apps with modular, fast, and
+          scalable
+          components.</h1>
+      </div>
+
+      <div class="w-full  sm:w-1/3 md:w-1/4 lg:w-1/5 flex flex-col items-start h-auto sm:h-60 py-8 sm:py-10">
+        <i class="ri-github-fill text-6xl"></i>
+        <h1 class="text-lg pt-4 pb-1">- GitHub</h1>
+        <h1 class="text-left text-sm opacity-50 w-[80%]">With my GitHub experience, I manage code and collaborate on
+          projects
+          effectively.</h1>
+      </div>
+
+      <div class="w-full  sm:w-1/3 md:w-1/4 lg:w-1/5 flex flex-col items-start h-auto sm:h-60 py-8 sm:py-10">
+        <i class="ri-javascript-fill text-6xl"></i>
+        <h1 class="text-lg pt-4 pb-1">- JavaScript</h1>
+        <h1 class="text-left text-sm opacity-50 w-[80%]"> I use JavaScript to bring websites to life through logic,
+          interactivity, and
+          dynamic behavior.</h1>
+      </div>
+
+      <div class="w-full  sm:w-1/3 md:w-1/4 lg:w-1/5 flex flex-col items-start h-auto sm:h-60 py-8 sm:py-10">
+        <i class="ri-swap-2-line text-6xl"></i>
+        <h1 class="text-lg pt-4 pb-1">- Video Editing</h1>
+        <h1 class="text-left text-sm opacity-50 w-[80%]"> I edit and enhance videos to create compelling and engaging
+          visual stories.
+        </h1>
+      </div>
+
+      <div class="w-full  sm:w-1/3 md:w-1/4 lg:w-1/5 flex flex-col items-start h-auto sm:h-60 py-8 sm:py-10">
+        <i class="ri-guide-fill text-6xl"></i>
+        <h1 class="text-lg pt-4 pb-1">- GSAP</h1>
+        <h1 class="text-left text-sm opacity-50 w-[80%]">GSAP an advanced animation library that I use to create smooth,
+          timeline-based
+          animations.</h1>
+      </div>
+
+
+    </div>
+  </section>
+
+
+  <!-- P R O J E C T   P A G E -->
+  <section id="projects" class="flex flex-col items-center py-10 cursor-default">
+    <div class="py-5 px-10 w-full flex flex-col">
+      <h1 class="text-4xl font-[PPNB]">PROJECTS</h1>
+      <p class="tracking-wider">A showcase of what I've built</p>
+    </div>
+
+    <div class="flex flex-wrap gap-5 items-center justify-center">
+      <div class="flex flex-col p-2  rounded-2xl bg-[#2c2c2c]">
+        <div class="">
+          <img class="w-auto h-36 sm:h-44 lg:h-60 rounded-2xl" src="/project1ss.png" alt="project1">
+        </div>
+        <div class="flex items-center justify-between">
+          <div class="p-2 flex flex-col gap-2 text-[#f5f5f5]">
+            <div>
+              <h1 class="text-base lg:text-lg tracking-wide">Netflix - Landing Page</h1>
+            </div>
+            <div class="flex gap-1">
+              <h1 class="bg-[#222222] rounded-4xl px-3 py-1 text-sm">Tailwind</h1>
+              <h1 class="bg-[#222222] rounded-4xl px-3 py-1 text-sm">Clone</h1>
+            </div>
+          </div>
+          <div class="hover:-rotate-45 duration-400 ease-in-out">
+            <a href="#"><i class="ri-arrow-right-circle-fill text-4xl text-[#f5f5f5]"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex flex-col p-2  rounded-2xl bg-[#2c2c2c]">
+        <div class="">
+          <img class="w-auto h-36 sm:h-44 lg:h-60 rounded-2xl" src="/project2ss.png" alt="project2">
+        </div>
+        <div class="flex items-center justify-between">
+          <div class="p-2 flex flex-col gap-2 text-[#f5f5f5]">
+            <div>
+              <h1 class="text-base lg:text-lg tracking-wide">Nike - Landing Page</h1>
+            </div>
+            <div class="flex gap-1">
+              <h1 class="bg-[#222222] rounded-4xl px-3 py-1 text-sm">Tailwind</h1>
+              <h1 class="bg-[#222222] rounded-4xl px-3 py-1 text-sm">Clone</h1>
+            </div>
+          </div>
+          <div class="hover:-rotate-45 duration-400 ease-in-out">
+            <a href="#"><i class="ri-arrow-right-circle-fill text-4xl text-[#f5f5f5]"></i></a>
+          </div>
+        </div>
+      </div>
+
+
+
+    </div>
+
+  </section>
+
+
+  <!-- A B O U T   P A G E -->
+  <section id="contact" class="flex flex-col items-center py-10 cursor-default bg-[#181818]">
+    <div class="py-5 px-10 w-full flex flex-col">
+      <h1 class="text-4xl font-[PPNB]">CONTACT</h1>
+      <p class="tracking-wider">Feel free to reach out to me</p>
+    </div>
+
+    <div class="">
+      <div class="p-4">
+        <div class="grid sm:grid-cols-2 items-start gap-12 p-8 w-full rounded-md">
+          <div class="flex flex-col items-start gap-5">
+            <h1 class="text-6xl text-left font-semibold">Let's Connect</h1>
+            <h2 class=" pt-4 text-xl font-semibold">Where I Hang Out</h2>
+
+            <ul class="flex flex-col gap-4">
+              <li class="h-10 w-10">
+                <a class="flex items-center gap-3" href="https://www.instagram.com/aintwiz/" target="_blank"><i
+                    class="ri-instagram-line text-4xl"></i>Instagram
+                </a>
+              </li>
+              <li class="h-10 w-10">
+                <a class="flex items-center gap-3" href="https://www.facebook.com/sakshamizhero" target="_blank"><i
+                    class="ri-facebook-line text-4xl"></i>Facebook
+                </a>
+              </li>
+              <li class="h-10 w-10">
+                <a class="flex items-center gap-3" href="https://www.linkedin.com/in/saksham-shrestha-8b6a16323/" target="_blank"><i
+                    class="ri-linkedin-box-line text-4xl"></i>LinkedIn
+                </a>
+              </li>
+              <li class="h-10 w-10">
+                <a class="flex items-center gap-3" href="https://github.com/Saksham4sure" target="_blank"><i
+                    class="ri-github-fill text-4xl"></i>GitHub
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <form class="space-y-4">
+            <input type='text' placeholder='Your Name'
+              class="w-full py-2.5 px-4 border-b border-gray-300 text-sm outline-0 focus:border-blue-300 duration-500" />
+            <input type='email' placeholder='Email'
+              class="w-full py-2.5 px-4 border-b border-gray-300 text-sm outline-0 focus:border-blue-300 duration-500" />
+            <input type='text' placeholder='Subject'
+              class="w-full py-2.5 px-4 border-b border-gray-300 text-sm outline-0 focus:border-blue-300 duration-500" />
+            <textarea placeholder='Message' rows="6"
+              class="w-full px-4 border-b border-gray-300 text-sm pt-2.5 outline-0 focus:border-blue-300 duration-500"></textarea>
+            <button type='button'
+              class="text-white bg-[#222222] hover:bg-[#2c2c2c] duration-500 rounded-md text-[15px] font-medium px-4 py-2 w-full cursor-pointer !mt-6 tracking-wider">Shoot it<i class="ri-send-plane-fill"></i></button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- F O O T E R -->
+  <p class="flex py-4 bg-black justify-center items-center tracking-widest cursor-default">Available Upon Request<i class="ri-user-follow-line"></i></p>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/CSSRulePlugin.min.js"></script>
+  <script type="module" src="src/main.js"></script>
+
+</body>
+
+</html>
