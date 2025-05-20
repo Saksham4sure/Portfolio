@@ -5,41 +5,34 @@ const lenis = new Lenis({
     autoRaf: true
   });
 
-  gsap.from(".prename", {
-    y:500,
-    stagger: 0.1,
-    duration: 1,
-    ease: "power4.out",
-    scale: 0.2,
-    filter: "blur(10px)",
-  });
+  // gsap.from(".prename", {
+  //   y:500,
+  //   stagger: 0.1,
+  //   duration: 1,
+  //   ease: "power4.out",
+  //   scale: 0.2,
+  //   filter: "blur(10px)",
+  // });
 
 
-    gsap.to("#prenameS", {
-    delay:1,
-    duration: 1.5,
-    scale: 150,
-    rotate: 70,
-    ease: "power4.inOut",
-  }); 
 
-  /* gsap.to(".prename", {
-    x: -500,
-    delay: 1.5,
-    stagger: 0.1,
-    duration: 1,
-  });
+  //  gsap.to(".prename", {
+  //   x: -500,
+  //   delay: 1.5,
+  //   stagger: 0.1,
+  //   duration: 1,
+  // });
 
-  gsap.from(".bgbox", {
-    x: -2000,
-    duration: 1,
-    delay: 1.3,
-  });  */
+  // gsap.from(".bgbox", {
+  //   x: -2000,
+  //   duration: 1,
+  //   delay: 1.3,
+  // });  
 
-  gsap.to(".preloader", {
-    opacity: 0,
-    delay: 2.3,
-  });
+  // gsap.to(".preloader", {
+  //   opacity: 0,
+  //   delay: 2.3,
+  // });
 
 
 
