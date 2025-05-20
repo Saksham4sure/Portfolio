@@ -73,9 +73,9 @@ html {
   width: 100vw;
   height: 100vh;
   display: flex;
-  background-color: #2222225d;
+  background-color: #22222286;
   backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(15px);
   clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
   will-change: transform;
 }
@@ -112,7 +112,6 @@ html {
   opacity: 0;
   transform: scale(0.8) translateX(-500%) ;
   transform-origin: left;
-  text-shadow: 1px 1px 5px black;
 }
 
 .sub-nav {
