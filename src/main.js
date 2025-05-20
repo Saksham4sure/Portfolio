@@ -5,6 +5,41 @@ const lenis = new Lenis({
     autoRaf: true
   });
 
+  gsap.from(".prename", {
+    y:500,
+    stagger: 0.1,
+    duration: 1,
+    ease: "power4.out",
+    scale: 0.2,
+    filter: "blur(10px)",
+  });
+
+
+    gsap.to("#prenameS", {
+    delay:1,
+    duration: 1.5,
+    scale: 150,
+    rotate: 70,
+    ease: "power4.inOut",
+  }); 
+
+  /* gsap.to(".prename", {
+    x: -500,
+    delay: 1.5,
+    stagger: 0.1,
+    duration: 1,
+  });
+
+  gsap.from(".bgbox", {
+    x: -2000,
+    duration: 1,
+    delay: 1.3,
+  });  */
+
+  gsap.to(".preloader", {
+    opacity: 0,
+    delay: 2.3,
+  });
 
 
 
@@ -17,7 +52,7 @@ const lenis = new Lenis({
       })
   } )
 
-  gsap.registerPlugin(CSSRulePlugin);
+gsap.registerPlugin(CSSRulePlugin);
 
 document.addEventListener("DOMContentLoaded", function() {
   let activeItemIndicator = CSSRulePlugin.getRule(".menu-item p#active::after");
@@ -25,22 +60,22 @@ document.addEventListener("DOMContentLoaded", function() {
   let isOpen = false;
 
 
-  gsap.set(".menu-item p", { y: 225 });
 
   const timeline = gsap.timeline({ paused: true });
 
   timeline.to(".overlay", {
-    duration: 1.2,
+    duration: 1.5,
     clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
     ease: "power4.inOut"
   });
 
   timeline.to(".menu-item p", {
     duration: 1,
-    y: 0,
-    letterSpacing: 0,
+    x: 0,
     filter: "blur(0px)",
-    stagger: 0.2,
+    scale: 1,
+    opacity: 100,
+    stagger: 0.1,
     ease: "power4.out "
   }, "-=1");
   
@@ -52,11 +87,15 @@ document.addEventListener("DOMContentLoaded", function() {
   }, "<");
 
   timeline.to(".sub-nav", {
-    bottom: "10%",
+    y: 0,
+    stagger: 0.2,
+    filter: "blur(0px)",
+    scale: 1,
     opacity: 1,
     duration: 0.5,
     delay: 0.5
   }, "<");
+
 
   toggleButton.addEventListener("click", function() {
     if (isOpen) {
@@ -78,3 +117,6 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   });
 })
+
+
+

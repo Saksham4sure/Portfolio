@@ -21,6 +21,18 @@
 
   </div>
 
+
+  <div class="preloader pointer-events-none">
+    <h1 class="prename flex items-center justify-center font-[PPNB] text-3xl sm:text-6xl md:text-8xl">S</h1>
+    <h1 class="prename flex items-center justify-center font-[PPNB] text-3xl sm:text-6xl md:text-8xl">A</h1>
+    <h1 class="prename flex items-center justify-center font-[PPNB] text-3xl sm:text-6xl md:text-8xl">K</h1>
+    <h1 id="prenameS" class="prename flex items-center justify-center font-[PPNB] text-3xl sm:text-6xl md:text-8xl">S</h1>
+    <h1 class="prename flex items-center justify-center font-[PPNB] text-3xl sm:text-6xl md:text-8xl">H</h1>
+    <h1 class="prename flex items-center justify-center font-[PPNB] text-3xl sm:text-6xl md:text-8xl">A</h1>
+    <h1 class="prename flex items-center justify-center font-[PPNB] text-3xl sm:text-6xl md:text-8xl">M</h1>
+  </div>
+
+
   <!-- N A V   B A R -->
   <nav class="flex w-screen items-start px-10 py-3 justify-between z-50 ">
     <div class="flex w-1/3 ">
@@ -48,19 +60,28 @@
   <div class="overlay text-[#E5E5E5] font-[PPN] z-30">
     <div class="overlay-menu">
       <div class="menu-item">
-        <p>Navigate to</p>
+        <p id="active"><a href="#home">Home</a></p>
       </div>
       <div class="menu-item">
-        <p id="active"><a href="#home">/home</a></p>
+        <p><a href="#skills">Skills</a></p>
       </div>
       <div class="menu-item">
-        <p><a href="#skills">/skills</a></p>
+        <p><a href="#projects">Projects</a></p>
       </div>
       <div class="menu-item">
-        <p><a href="#projects">/projects</a></p>
+        <p><a href="#contact">Contact</a></p>
       </div>
-      <div class="menu-item">
-        <p><a href="#contact">/contact</a></p>
+
+      <div class=" flex gap-5">
+        <div class="sub-nav">
+          <p><a href="https://www.instagram.com/aintwiz/" target="_blank"><i class="ri-instagram-fill text-2xl"></i></a></p>
+        </div>
+        <div class="sub-nav">
+          <p><a href="https://www.facebook.com/sakshamizhero" target="_blank"><i class="ri-facebook-fill text-2xl"></i></a></p>
+        </div>
+        <div class="sub-nav">
+          <p><a href="https://github.com/Saksham4sure" target="_blank"><i class="ri-github-fill text-2xl"></i></a></p>
+        </div>
       </div>
       
     </div>
@@ -77,13 +98,13 @@
           <h1 class="text-lg sm:text-3xl md:text-4xl lg:text-5xl font-[Praise]">Front-End</h1>
         </div>
         <div>
-          <h1 class="text-4xl sm:text-6xl  md:text-8xl lg:text-9xl">DEVELOPER</h1>
+          <h1 class="text-4xl sm:text-6xl  md:text-8xl lg:text-9xl huge1">DEVELOPER</h1>
         </div>
       </div>
 
       <div class="flex justify-center gap-2 md:gap-6">
         <div class="flex items-center">
-          <h1 class="text-4xl sm:text-6xl md:text-8xl lg:text-9xl">SAKSHAM</h1>
+          <h1 class="text-4xl sm:text-6xl md:text-8xl lg:text-9xl huge2">SAKSHAM</h1>
         </div>
         <div class="flex items-center">
           <h1 class="text-lg sm:text-3xl md:text-4xl lg:text-5xl font-[Praise]">Shrestha</h1>
@@ -117,7 +138,7 @@
       <p class="tracking-wider">Skills that shape my work</p>
     </div>
     <div class="flex flex-col sm:flex-row flex-wrap items-center w-full justify-center  px-10">
-      <div class="w-full  sm:w-1/3 md:w-1/4 lg:w-1/5 flex flex-col items-start h-auto sm:h-60 py-8 sm:py-10">
+      <div class="w-full  sm:w-1/3 md:w-1/4 lg:w-1/5 flex flex-col items-start h-auto sm:h-60 py-8 sm:py-10 skill">
         <i class="ri-stackshare-line text-6xl"></i>
         <h1 class="text-lg pt-4 pb-1">- Motion Graphics</h1>
         <h1 class="text-left text-sm opacity-50 w-[80%]">With art of motion graphics, I animate ideas into visual
@@ -125,21 +146,21 @@
           attention.</h1>
       </div>
 
-      <div class="w-full  sm:w-1/3 md:w-1/4 lg:w-1/5 flex flex-col items-start h-auto sm:h-60 py-8 sm:py-10">
+      <div class="w-full  sm:w-1/3 md:w-1/4 lg:w-1/5 flex flex-col items-start h-auto sm:h-60 py-8 sm:py-10 skill">
         <i class="ri-tailwind-css-fill text-6xl "></i>
         <h1 class="text-lg pt-4 pb-1">- Tailwind CSS</h1>
         <h1 class="text-left text-sm opacity-50 w-[80%]">Knowledge of Tailwind CSS helps me design faster with clean
           code.</h1>
       </div>
 
-      <div class="w-full  sm:w-1/3 md:w-1/4 lg:w-1/5 flex flex-col items-start h-auto sm:h-60 py-8 sm:py-10">
+      <div class="w-full  sm:w-1/3 md:w-1/4 lg:w-1/5 flex flex-col items-start h-auto sm:h-60 py-8 sm:py-10 skill">
         <i class="ri-html5-fill text-6xl"></i>
         <h1 class="text-lg pt-4 pb-1">- HTML</h1>
         <h1 class="text-left text-sm opacity-50 w-[80%]">With my HTML skills, I build clean and semantic strucutre of
           web pages.</h1>
       </div>
 
-      <div class="w-full  sm:w-1/3 md:w-1/4 lg:w-1/5 flex flex-col items-start h-auto sm:h-60 py-8 sm:py-10">
+      <div class="w-full  sm:w-1/3 md:w-1/4 lg:w-1/5 flex flex-col items-start h-auto sm:h-60 py-8 sm:py-10 skill">
         <i class="ri-css3-fill text-6xl"></i>
         <h1 class="text-lg pt-4 pb-1">- CSS</h1>
         <h1 class="text-left text-sm opacity-50 w-[80%]">I bring designs to life with responsive styles, animations, and
@@ -147,7 +168,7 @@
           with the help of CSS.</h1>
       </div>
 
-      <div class="w-full  sm:w-1/3 md:w-1/4 lg:w-1/5 flex flex-col items-start h-auto sm:h-60 py-8 sm:py-10">
+      <div class="w-full  sm:w-1/3 md:w-1/4 lg:w-1/5 flex flex-col items-start h-auto sm:h-60 py-8 sm:py-10 skill">
         <i class="ri-reactjs-fill text-6xl"></i>
         <h1 class="text-lg pt-4 pb-1">- ReactJS</h1>
         <h1 class="text-left text-sm opacity-50 w-[80%]">With ReactJs, I develop modern web apps with modular, fast, and
@@ -155,7 +176,7 @@
           components.</h1>
       </div>
 
-      <div class="w-full  sm:w-1/3 md:w-1/4 lg:w-1/5 flex flex-col items-start h-auto sm:h-60 py-8 sm:py-10">
+      <div class="w-full  sm:w-1/3 md:w-1/4 lg:w-1/5 flex flex-col items-start h-auto sm:h-60 py-8 sm:py-10 skill">
         <i class="ri-github-fill text-6xl"></i>
         <h1 class="text-lg pt-4 pb-1">- GitHub</h1>
         <h1 class="text-left text-sm opacity-50 w-[80%]">With my GitHub experience, I manage code and collaborate on
@@ -163,7 +184,7 @@
           effectively.</h1>
       </div>
 
-      <div class="w-full  sm:w-1/3 md:w-1/4 lg:w-1/5 flex flex-col items-start h-auto sm:h-60 py-8 sm:py-10">
+      <div class="w-full  sm:w-1/3 md:w-1/4 lg:w-1/5 flex flex-col items-start h-auto sm:h-60 py-8 sm:py-10 skill">
         <i class="ri-javascript-fill text-6xl"></i>
         <h1 class="text-lg pt-4 pb-1">- JavaScript</h1>
         <h1 class="text-left text-sm opacity-50 w-[80%]"> I use JavaScript to bring websites to life through logic,
@@ -171,7 +192,7 @@
           dynamic behavior.</h1>
       </div>
 
-      <div class="w-full  sm:w-1/3 md:w-1/4 lg:w-1/5 flex flex-col items-start h-auto sm:h-60 py-8 sm:py-10">
+      <div class="w-full  sm:w-1/3 md:w-1/4 lg:w-1/5 flex flex-col items-start h-auto sm:h-60 py-8 sm:py-10 skill">
         <i class="ri-swap-2-line text-6xl"></i>
         <h1 class="text-lg pt-4 pb-1">- Video Editing</h1>
         <h1 class="text-left text-sm opacity-50 w-[80%]"> I edit and enhance videos to create compelling and engaging
@@ -179,7 +200,7 @@
         </h1>
       </div>
 
-      <div class="w-full  sm:w-1/3 md:w-1/4 lg:w-1/5 flex flex-col items-start h-auto sm:h-60 py-8 sm:py-10">
+      <div class="w-full  sm:w-1/3 md:w-1/4 lg:w-1/5 flex flex-col items-start h-auto sm:h-60 py-8 sm:py-10 skill">
         <i class="ri-guide-fill text-6xl"></i>
         <h1 class="text-lg pt-4 pb-1">- GSAP</h1>
         <h1 class="text-left text-sm opacity-50 w-[80%]">GSAP an advanced animation library that I use to create smooth,
@@ -309,6 +330,7 @@
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/CSSRulePlugin.min.js"></script>
   <script type="module" src="src/main.js"></script>
+  <script type="module" src="src/scroll.js"></script>
 
 </body>
 
